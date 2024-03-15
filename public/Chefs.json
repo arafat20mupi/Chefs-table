@@ -1,0 +1,87 @@
+Md Saiful Islam Rafel
+[
+    {
+      "id": 1,
+      "name": "Spicy Chicken Stir-Fry",
+      "image": "https://i.ibb.co/KxpX9Qj/Rectangle-20170.png",
+      "description": "A quick and flavorful stir-fry dish with tender chicken and vibrant vegetables.",
+      "ingredients": [
+        {"ingredient_name": "chicken", "quantity": "550 g"},
+        {"ingredient_name": "soy sauce", "quantity": "120 ml"},
+        {"ingredient_name": "basil leaf", "quantity": "200 g"},
+        {"ingredient_name": "mushroom", "quantity": "400 g"}
+      ],
+      "preparing_time": "30 min",
+      "calories": "320 calories"
+    },
+    {
+      "id": 2,
+      "name": "Vegetable Pasta Primavera",
+      "image": "https://i.ibb.co/vvM0JTy/Rectangle-20170-1.png",
+      "description": "A light and colorful pasta dish featuring fresh seasonal vegetables.",
+      "ingredients": [
+        {"ingredient_name": "pasta", "quantity": "300 g"},
+        {"ingredient_name": "bell peppers", "quantity": "2"},
+        {"ingredient_name": "zucchini", "quantity": "1"},
+        {"ingredient_name": "cherry tomatoes", "quantity": "1 cup"}
+      ],
+      "preparing_time": "25 min",
+      "calories": "250 calories"
+    },
+    {
+      "id": 3,
+      "name": "Classic Beef Burger",
+      "image": "https://i.ibb.co/KxpX9Qj/Rectangle-20170.png",
+      "description": "A juicy and satisfying burger with all the classic toppings.",
+      "ingredients": [
+        {"ingredient_name": "ground beef", "quantity": "400 g"},
+        {"ingredient_name": "burger buns", "quantity": "4"},
+        {"ingredient_name": "lettuce", "quantity": "100 g"},
+        {"ingredient_name": "cheese slices", "quantity": "4"}
+      ],
+      "preparing_time": "20 min",
+      "calories": "450 calories"
+    },
+    {
+      "id": 4,
+      "name": "Mango Avocado Salad",
+      "image": "https://i.ibb.co/vvM0JTy/Rectangle-20170-1.png",
+      "description": "A refreshing salad with tropical flavors of mango and creamy avocado.",
+      "ingredients": [
+        {"ingredient_name": "ripe mangoes", "quantity": "2"},
+        {"ingredient_name": "avocados", "quantity": "2"},
+        {"ingredient_name": "mixed greens", "quantity": "100 g"},
+        {"ingredient_name": "lime juice", "quantity": "1/4 cup"}
+      ],
+      "preparing_time": "15 min",
+      "calories": "200 calories"
+    },
+    {
+      "id": 5,
+      "name": "Teriyaki Tofu Stir-Fry",
+      "image": "https://i.ibb.co/KxpX9Qj/Rectangle-20170.png",
+      "description": "A vegetarian stir-fry with crispy tofu glazed in sweet and savory teriyaki sauce.",
+      "ingredients": [
+        {"ingredient_name": "firm tofu", "quantity": "400 g"},
+        {"ingredient_name": "teriyaki sauce", "quantity": "120 ml"},
+        {"ingredient_name": "broccoli florets", "quantity": "200 g"},
+        {"ingredient_name": "carrots", "quantity": "150 g"}
+      ],
+      "preparing_time": "35 min",
+      "calories": "280 calories"
+    },
+    {
+      "id": 6,
+      "name": "Quinoa Black Bean Bowl",
+      "image": "https://i.ibb.co/vvM0JTy/Rectangle-20170-1.png",
+      "description": "A nutritious and filling bowl featuring protein-packed quinoa and fiber-rich black beans.",
+      "ingredients": [
+        {"ingredient_name": "quinoa", "quantity": "1 cup"},
+        {"ingredient_name": "black beans", "quantity": "1 can"},
+        {"ingredient_name": "bell pepper", "quantity": "1"},
+        {"ingredient_name": "corn kernels", "quantity": "1/2 cup"}
+      ],
+      "preparing_time": "40 min",
+      "calories": "350 calories"
+    }
+  ]
