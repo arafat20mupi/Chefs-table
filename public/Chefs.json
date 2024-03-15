@@ -1,4 +1,4 @@
-Md Saiful Islam Rafel
+
 [
     {
       "id": 1,
@@ -9,10 +9,12 @@ Md Saiful Islam Rafel
         {"ingredient_name": "chicken", "quantity": "550 g"},
         {"ingredient_name": "soy sauce", "quantity": "120 ml"},
         {"ingredient_name": "basil leaf", "quantity": "200 g"},
+        {"ingredient_name": "mushrooms", "quantity": "400 g"},
+        {"ingredient_name": "basil lea", "quantity": "200 g"},
         {"ingredient_name": "mushroom", "quantity": "400 g"}
       ],
-      "preparing_time": "30 min",
-      "calories": "320 calories"
+      "preparing_time": 30,
+      "calories":320
     },
     {
       "id": 2,
@@ -23,10 +25,12 @@ Md Saiful Islam Rafel
         {"ingredient_name": "pasta", "quantity": "300 g"},
         {"ingredient_name": "bell peppers", "quantity": "2"},
         {"ingredient_name": "zucchini", "quantity": "1"},
-        {"ingredient_name": "cherry tomatoes", "quantity": "1 cup"}
+        {"ingredient_name": "cherry tomatoes", "quantity": "1 cup"},
+        {"ingredient_name": "zucchinis", "quantity": "1"},
+        {"ingredient_name": "cherry tomato", "quantity": "1 cup"}
       ],
-      "preparing_time": "25 min",
-      "calories": "250 calories"
+      "preparing_time": 25,
+      "calories": 250
     },
     {
       "id": 3,
@@ -37,10 +41,12 @@ Md Saiful Islam Rafel
         {"ingredient_name": "ground beef", "quantity": "400 g"},
         {"ingredient_name": "burger buns", "quantity": "4"},
         {"ingredient_name": "lettuce", "quantity": "100 g"},
+        {"ingredient_name": "cheese slices", "quantity": "4"},
+        {"ingredient_name": "lettuce", "quantity": "100 g"},
         {"ingredient_name": "cheese slices", "quantity": "4"}
       ],
-      "preparing_time": "20 min",
-      "calories": "450 calories"
+      "preparing_time":20 ,
+      "calories": 450
     },
     {
       "id": 4,
@@ -50,11 +56,13 @@ Md Saiful Islam Rafel
       "ingredients": [
         {"ingredient_name": "ripe mangoes", "quantity": "2"},
         {"ingredient_name": "avocados", "quantity": "2"},
+        {"ingredient_name": "ripe mangoes", "quantity": "2"},
+        {"ingredient_name": "avocados", "quantity": "2"},
         {"ingredient_name": "mixed greens", "quantity": "100 g"},
         {"ingredient_name": "lime juice", "quantity": "1/4 cup"}
       ],
-      "preparing_time": "15 min",
-      "calories": "200 calories"
+      "preparing_time": 15 ,
+      "calories": 200 
     },
     {
       "id": 5,
@@ -65,10 +73,12 @@ Md Saiful Islam Rafel
         {"ingredient_name": "firm tofu", "quantity": "400 g"},
         {"ingredient_name": "teriyaki sauce", "quantity": "120 ml"},
         {"ingredient_name": "broccoli florets", "quantity": "200 g"},
+        {"ingredient_name": "teriyaki sauce", "quantity": "120 ml"},
+        {"ingredient_name": "broccoli florets", "quantity": "200 g"},
         {"ingredient_name": "carrots", "quantity": "150 g"}
       ],
-      "preparing_time": "35 min",
-      "calories": "280 calories"
+      "preparing_time": 35,
+      "calories": 280
     },
     {
       "id": 6,
@@ -78,10 +88,12 @@ Md Saiful Islam Rafel
       "ingredients": [
         {"ingredient_name": "quinoa", "quantity": "1 cup"},
         {"ingredient_name": "black beans", "quantity": "1 can"},
+        {"ingredient_name": "quinoa", "quantity": "1 cup"},
+        {"ingredient_name": "black beans", "quantity": "1 can"},
         {"ingredient_name": "bell pepper", "quantity": "1"},
         {"ingredient_name": "corn kernels", "quantity": "1/2 cup"}
       ],
-      "preparing_time": "40 min",
-      "calories": "350 calories"
+      "preparing_time": 40,
+      "calories": 350 
     }
   ]
