@@ -35,7 +35,7 @@
     {
       "id": 3,
       "name": "Classic Beef Burger",
-      "image": "https://i.ibb.co/KxpX9Qj/Rectangle-20170.png",
+      "image": "https://i.ibb.co/XJb0qkk/jametlene-reskp-1ly1n-Peo-Jk-unsplash.jpg",
       "description": "A juicy and satisfying burger with all the classic toppings.",
       "ingredients": [
         {"ingredient_name": "ground beef", "quantity": "400 g"},
@@ -48,10 +48,14 @@
       "preparing_time":20 ,
       "calories": 450
     },
+
+    
+
+
     {
       "id": 4,
       "name": "Mango Avocado Salad",
-      "image": "https://i.ibb.co/vvM0JTy/Rectangle-20170-1.png",
+      "image": "https://i.ibb.co/HDMw8j1/vita-marija-murenaite-5-Q-Edarv5z-Q-unsplash.jpg",
       "description": "A refreshing salad with tropical flavors of mango and creamy avocado.",
       "ingredients": [
         {"ingredient_name": "ripe mangoes", "quantity": "2"},
@@ -67,7 +71,7 @@
     {
       "id": 5,
       "name": "Teriyaki Tofu Stir-Fry",
-      "image": "https://i.ibb.co/KxpX9Qj/Rectangle-20170.png",
+      "image": "https://i.ibb.co/Wnzmc9r/dannie-sorum-LOBKp-b-M2kw-unsplash.jpg",
       "description": "A vegetarian stir-fry with crispy tofu glazed in sweet and savory teriyaki sauce.",
       "ingredients": [
         {"ingredient_name": "firm tofu", "quantity": "400 g"},
@@ -83,8 +87,8 @@
     {
       "id": 6,
       "name": "Quinoa Black Bean Bowl",
-      "image": "https://i.ibb.co/vvM0JTy/Rectangle-20170-1.png",
-      "description": "A nutritious and filling bowl featuring protein-packed quinoa and fiber-rich black beans.",
+      "image": "https://i.ibb.co/YZBPVvZ/brenda-godinez-Zn-7-Fzo-L1w-unsplash.jpg",
+      "description": "A nutritious and filling bowl featuring protein-packed  black beans.",
       "ingredients": [
         {"ingredient_name": "quinoa", "quantity": "1 cup"},
         {"ingredient_name": "black beans", "quantity": "1 can"},

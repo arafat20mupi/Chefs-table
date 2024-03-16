@@ -1,10 +1,11 @@
-
 import { useEffect, useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import Header from './Components/Header/Header'
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Recipes from './Components/Recipes/Recipes';
 function App() {
-
   const [carts , setCarts] = useState([]);
   const [cook , setCook] = useState([]);
   const [currently , setCurrently] = useState([]);
@@ -12,40 +13,57 @@ function App() {
     fetch('Chefs.json')
    .then(res => res.json())
    .then(data =>setCarts(data));
-  },[])
+  },[]);
   const handleCooking = (c) =>{
     const isExit = cook.find(item => item.id === c.id);
     if(!isExit){
       setCook([...cook, c])
-      setCurrently([...currently, c])
+      
+      toast.success('Cook start', {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+        });
     }
     else{
-      
+      toast.error('Already cook start', {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+        });
     }
-    // setCook([c])
   }
-
   const handleDelete =(id)=>{
-    setCook(cook.filter(item => item.id!== id))
+    setCook(cook.filter(item => item.id!== id.id))
+    setCurrently([...currently, id])
   };
   return (
     <>
       <Header></Header>
-      
       <main className='container mx-auto'>
         <Banner></Banner>
-        <div className='text-center '>
-            <h2 className='text-4xl font-extrabold'>Our Recipes</h2>
-            <p className=''>Dietary decisions are at all times necessary to general well being, however when <br /> you have arthritis, the meals you select can have a stunning influence in your joint well being.</p>
-          </div>
+        <Recipes></Recipes>
         <div className='flex mt-12'>
-          
+
+          {/* cart section */}
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-2/3 gap-10 '>
           {
             carts.map((cart ,index) => ( 
               <div key={index} className=" rounded-2xl bg-base-100 shadow-xl">
                   <div className='p-4 '>
-                    <img className='w-full ' src={cart.image} alt="" />
+                    <img className='w-full h-56 rounded-xl' src={cart.image} alt="" />
                   </div>
                   <div className="p-10 pt-1 ">
                     <h2 className=" text-xl font-semibold">{cart.name}</h2>
@@ -76,31 +94,33 @@ https://i.ibb.co/93PhCL0/Frame-5.png" alt="" />
             ))
           }
           </div>
-          <div className='ml-8 p-10 shadow-xl w-1/3 rounded-xl'>
-            <h2 className='text-2xl font-semibold text-black text-center'>Want to cook: {cook.length}</h2>
+
+          {/* side bar */}
+          <div className='  shadow-xl p-8 w-1/2 lg:w-1/3 rounded-xl'>
             <div>
+              <h2 className='text-2xl font-semibold text-black text-center'>Want to cook: {cook.length}</h2>
               <div className='flex text-black font-semibold justify-evenly'>
-                <p className='-mr-10'></p>
+                
                 <p>Name</p>
                 <p>Time</p>
                 <p>Calories</p>
-                <p></p>
               </div>
-              <div>
-                {
+              <div className='space-y-4'>
+                  {
                   cook.map( (c, index) => (
-                      <div key={c.id} className='flex justify-between'>
-                        <div className="overflow-x-auto">
-                          <table className="table table-zebra">
+                      <div key={index} className=''>
+                        <div className="overflow-x-auto w-full">
+                          <table className="bg-slate-200  table relative table-zebra">
                             <tbody>
-                              <tr>
+                              <tr >
                                 <th>{index+1}</th>
-                                <td>{c.name}</td>
+                                <td className='flex-wrap lg:w-16 flex '>{c.name}</td>
                                 <td>{c.preparing_time}</td>
-                                <td className=''>{c.calories}</td>
+                                <td>{c.calories}</td>
                                 <td>
-                                  <button onClick={()=> handleDelete(c.id)} className=" text-lg text-black font-medium btn bg-[#0BE58A] rounded-3xl">Preparing</button>
+                                  <button onClick={()=> handleDelete(c)} className="lg:text-lg text-black lg:font-bold btn bg-[#0BE58A] rounded-3xl">Preparing</button>
                                 </td>
+                                {/* <td></td> */}
                               </tr>
                             </tbody>
                           </table>
@@ -111,12 +131,53 @@ https://i.ibb.co/93PhCL0/Frame-5.png" alt="" />
                 }
               </div>
             </div>
-            <h2 className='text-2xl font-semibold text-black text-center'>Currently cooking: {currently.length} </h2>
 
+            <div>
+              <h2 className='text-2xl font-semibold text-black text-center'>Currently cooking: {currently.length} </h2>
+              <div className='flex text-black font-semibold justify-evenly'>
+                  {/* <p></p> */}
+                  <p>Name</p>
+                  <p>Time</p>
+                  <p>Calories</p>
+                  <p></p>
+              </div>
+              <div className='space-y-5'>
+                    {
+                    currently.map( (c, index) => (
+                        <div key={index} className='flex justify-between'>
+                          <div className="overflow-x-auto">
+                            <table className="bg-slate-200  table table-zebra">
+                              <tbody  className='space-y-3'>
+                                <tr>
+                                  <th className=''>{index+1}</th>
+                                  <td className=' w-20'>{c.name}</td>
+                                  <td className=''>{c.preparing_time}</td>
+                                  <td className='text-center w-20'>{c.calories}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    ))
+                  }
+              </div>
+            </div> 
+            <div className='flex justify-between mt-8 text-lg font-medium'>
+              <p>
+              Total Time = {
+                currently.reduce((acc, c) => acc + c.preparing_time, 0)
+              } minutes
+              </p>
+              <p>
+              Total Calories = {
+                currently.reduce((acc, c) => acc + c.calories, 0)
+              } calories
+              </p>
+            </div> 
           </div>
         </div>
-        
       </main>
+      <ToastContainer />
     </>
   )
 }
