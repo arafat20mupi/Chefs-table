@@ -55,10 +55,10 @@ function App() {
       <main className='container mx-auto'>
         <Banner></Banner>
         <Recipes></Recipes>
-        <div className='flex mt-12'>
+        <div className='lg:flex mt-12'>
 
           {/* cart section */}
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-2/3 gap-10 '>
+          <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full lg:w-2/3 gap-10 '>
           {
             carts.map((cart ,index) => ( 
               <div key={index} className=" rounded-2xl bg-base-100 shadow-xl">
@@ -76,8 +76,7 @@ function App() {
                     </ul>
                     <div className='flex justify-between'>
                       <div className='flex text-center items-center'>
-                        <img className='h-6' src="https://i.ibb.co/Kb4NMxH/Frame-6.png
-https://i.ibb.co/93PhCL0/Frame-5.png" alt="" />
+                        <img className='h-6' src="https://i.ibb.co/1ZZz9mQ/Frame-5.png" alt="" />
                         <p>{cart.preparing_time} minutes </p>
                       </div>
                       <div className='flex text-center items-center'>
@@ -96,7 +95,7 @@ https://i.ibb.co/93PhCL0/Frame-5.png" alt="" />
           </div>
 
           {/* side bar */}
-          <div className='  shadow-xl p-8 w-1/2 lg:w-1/3 rounded-xl'>
+          <div className='  shadow-xl lg:p-8 w-full lg:w-1/3 rounded-xl'>
             <div>
               <h2 className='text-2xl font-semibold text-black text-center'>Want to cook: {cook.length}</h2>
               <div className='flex text-black font-semibold justify-evenly'>
@@ -147,10 +146,10 @@ https://i.ibb.co/93PhCL0/Frame-5.png" alt="" />
                         <div key={index} className='flex justify-between'>
                           <div className="overflow-x-auto">
                             <table className="bg-slate-200  table table-zebra">
-                              <tbody  className='space-y-3'>
+                              <tbody  className='lg:space-y-3'>
                                 <tr>
                                   <th className=''>{index+1}</th>
-                                  <td className=' w-20'>{c.name}</td>
+                                  <td className=' lg:w-20'>{c.name}</td>
                                   <td className=''>{c.preparing_time}</td>
                                   <td className='text-center w-20'>{c.calories}</td>
                                 </tr>
@@ -162,7 +161,7 @@ https://i.ibb.co/93PhCL0/Frame-5.png" alt="" />
                   }
               </div>
             </div> 
-            <div className='flex justify-between mt-8 text-lg font-medium'>
+            <div className='lg:flex justify-between mt-8 text-lg font-medium'>
               <p>
               Total Time = {
                 currently.reduce((acc, c) => acc + c.preparing_time, 0)
